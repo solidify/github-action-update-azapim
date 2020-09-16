@@ -1,5 +1,5 @@
-name: 'Deploy to API Management'
-description: 'Deploy to API Management'
+name: 'Deploy to Azure API Management'
+description: 'This GitHub Action allows you to update your Azure API Management api from an OpenAPI endpoint or file.'
 author: 'Solidify'
 inputs:
   swaggerUrl:
