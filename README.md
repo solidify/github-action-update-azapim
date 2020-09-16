@@ -10,15 +10,13 @@ This GitHub Action allows you to update your Azure API Management api from an Op
 
 ## Example usage
 ```yaml
-- uses: solidify/github-actions-team-hallon
+- name: Azure DevOps Work Item linker
+  uses: solidify/github-action-azdo-link@master
   with:
     swaggerPath: 'URL/path to Swagger'
     apiManager: ${{ secrets.API_MANAGER_URL }}
     creds: ${{ secrets.AZURE_CREDENTIALS }}
 ```
-
-## Contributing
-We would love for you to contribute! Thank you.
 
 ## License
 The scripts and documentation in this project are released under the [MIT License](LICENSE)
