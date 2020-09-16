@@ -3,9 +3,6 @@ This GitHub Action allows you to update your Azure API Management api from an Op
 
 ## Usage
 
-### Pre-requisites
-Create a workflow `.yml` file in your `.github/workflows` directory. See documentation for [Creating a workflow file](https://help.github.com/en/articles/configuring-a-workflow#creating-a-workflow-file).
-
 ### Inputs
 - `swaggerPath`: URL/path to Swagger
 - `apiManager`: APIM endpoint URL
