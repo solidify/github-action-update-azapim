@@ -1,4 +1,4 @@
-# GitHub Action - Update API Management
+Update Azuee API Management
 This GitHub Action allows you to update your Azure API Management api from an OpenAPI endpoint or file. 
 
 ## Usage
