@@ -1,0 +1,24 @@
+name: 'Manual test'
+on: 
+  workflow_dispatch:
+
+jobs:
+  build: # make sure build/ci work properly
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          npm install
+      - run: |
+          npm run all
+          
+  test: # make sure the action works
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+        with:
+          swaggerUrl: ${{ secrets.SWAGGER_URL }}
+          apiManagementEndpointUrl: ${{ secrets.AZURE_APIM_URL }}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}

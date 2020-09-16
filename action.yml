@@ -1,0 +1,16 @@
+name: 'Deploy to API Management'
+description: 'Deploy to API Management'
+author: 'Solidify'
+inputs:
+  swaggerUrl:
+    required: true
+    description: 'URL to Swagger'
+  apiManagementEndpointUrl:
+    required: true
+    description: 'APIM endpoint URL'
+  creds:
+    required: true
+    description: 'APIM credentials'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
